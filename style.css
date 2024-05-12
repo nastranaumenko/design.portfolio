@@ -50,10 +50,11 @@ body{
 }
 
 .banner{
-    display: flex;
-    justify-content: center;
-    background-image: url(./img/main-banner.svg);
+    background-image: url('./img/banner.jpeg');
     height: 710px;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
 }
 
 .text{
@@ -515,6 +516,10 @@ margin-bottom: 15px;
 }
 
 @media (max-width: 425px){
+    .banner{
+        background-image: url(./img/banner-phone.jpeg);
+    }
+
     .why-we img{
        display: none;
     }
@@ -524,6 +529,11 @@ margin-bottom: 15px;
    .card{
     width: 320px;
    }
+
+   .banner{
+    background-image: url(./img/banner-phone.jpeg);
+    }
+
 
    .project {
     margin-top: 20px;
